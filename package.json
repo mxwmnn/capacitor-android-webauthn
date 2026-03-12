@@ -44,7 +44,12 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "bun run build",
-    "docgen": "docgen --api CredentialManagerPlugin --output-readme README.md --output-json dist/docs.json"
+    "docgen": "docgen --api CredentialManagerPlugin --output-readme README.md --output-json dist/docs.json",
+    "release:dev": "npm version prerelease --preid=dev",
+    "release:patch": "npm version patch",
+    "release:minor": "npm version minor",
+    "release:major": "npm version major",
+    "release:push": "git push origin main --follow-tags"
   },
   "devDependencies": {
     "@capacitor/android": "^8.0.0",
