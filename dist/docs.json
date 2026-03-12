@@ -1,0 +1,51 @@
+{
+  "api": {
+    "name": "CredentialManagerPlugin",
+    "slug": "credentialmanagerplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "echo",
+        "signature": "(options: { value: string; }) => Promise<{ value: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ value: string; }"
+          }
+        ],
+        "returns": "Promise<{ value: string; }>",
+        "tags": [],
+        "docs": "Echo a value back (for testing plugin communication)",
+        "complexTypes": [],
+        "slug": "echo"
+      },
+      {
+        "name": "injectPolyfill",
+        "signature": "() => Promise<{ success: boolean; }>",
+        "parameters": [],
+        "returns": "Promise<{ success: boolean; }>",
+        "tags": [],
+        "docs": "Manually inject the WebAuthn polyfill into the current page\nUseful for debugging or re-injecting after navigation",
+        "complexTypes": [],
+        "slug": "injectpolyfill"
+      },
+      {
+        "name": "checkInjection",
+        "signature": "() => Promise<{ isInjected: boolean; rawResult: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ isInjected: boolean; rawResult: string; }>",
+        "tags": [],
+        "docs": "Check if the polyfill has been successfully injected\nReturns true if __webauthn_interface__ exists in the window",
+        "complexTypes": [],
+        "slug": "checkinjection"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}

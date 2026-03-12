@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+# dist/ - needed for GitHub installs
+.gradle/
+android/.gradle/
+android/build/
+android/local.properties
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temp files
+*.tmp
+*.tmp.*
+*~
+*.sw[mnpcod]
+
+# Internal planning docs
+docs/plans/
